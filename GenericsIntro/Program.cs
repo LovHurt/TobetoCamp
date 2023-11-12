@@ -14,7 +14,7 @@ namespace GenericsIntro
 
             names.Add("Engin");
 
-            Console.WriteLine("");
+            Console.WriteLine();
         }
     }
 }
