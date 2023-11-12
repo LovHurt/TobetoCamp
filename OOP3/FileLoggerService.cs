@@ -6,7 +6,7 @@ namespace OOP3
     {
         public void Log()
         {
-            Console.WriteLine("It has been logged to database");
+            Console.WriteLine("It has been logged to file database");
         }
     }
 }

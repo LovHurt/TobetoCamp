@@ -10,13 +10,15 @@ namespace OOP3
     {
         //Method Injection
 
-        public void Apply(ICreditManager creditManager, ILoggerService loggerService)
+        public void Apply(ICreditManager creditManager, ILoggerService XLoggerService, ILoggerService YLoggerService, ILoggerService ZLoggerService)
         {
             creditManager.Calculate();
-            loggerService.Log();
+            XLoggerService.Log();
+            YLoggerService.Log();
+            ZLoggerService.Log();
         }
 
-        public void DoCreditForeKnowledge(List< ICreditManager> credits)
+        public void DoCreditForeKnowledge(List<ICreditManager> credits)
         {
             foreach (var credit in credits)
             {
