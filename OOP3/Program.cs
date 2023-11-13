@@ -21,7 +21,7 @@ namespace OOP3
             List<ILoggerService> loggers = new List<ILoggerService> { new SmsLoggerService(), new FileLoggerService()};
 
             ApplicationManager applicationManager = new ApplicationManager();
-            applicationManager.Apply(vehicleCreditManager, fileLoggerService, databaseLoggerService, smsLoggerService);
+            applicationManager.Apply(vehicleCreditManager,new List<ILoggerService> { fileLoggerService }, databaseLoggerService, smsLoggerService);
 
             List<ICreditManager> credits = new List<ICreditManager>() {housingCreditManager, vehicleCreditManager };
            
